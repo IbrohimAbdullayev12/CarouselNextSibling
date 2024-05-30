@@ -1,0 +1,65 @@
+body {
+    margin: 0;
+    overflow-x: hidden;
+}
+.body {
+    width: 100%;
+    height: 90vh;
+    border: 1px solid black;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    position: absolute; 
+    display: none;
+}
+
+.absolute {
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    background-color: transparent;
+    border: transparent;
+    color: white;
+    font-size: 60px;
+}
+
+.txt {
+    width: 100%;
+    height: 9.8vh;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+}
+
+.animate {
+    animation: move 1s forwards;
+}
+@keyframes move {
+    from { transform:translateX(1000px) ; }
+    to { transform: translateX(0px); }
+}
+
+.animateR {
+    animation: moveReverse 1s forwards;
+}
+@keyframes moveReverse {
+    from { transform:translateX(-1000px) ; }
+    to { transform: translateX(0px); }
+}
+
+button {
+    z-index: 3;
+}
